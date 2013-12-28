@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpenERP</string>
+    <string name="title_activity_main">OpenERP</string>
+    <string name="drawer_open">打开导航面板</string>
+    <string name="drawer_close">关闭导航面板</string>
+
+    <!-- Account Fragment Strings -->
+    <string name="logo_description">OpenERP</string>
+    <string name="account_title">设置你的服务器信息</string>
+    <string name="account_description">输入openerp7.0服务器URL.</string>
+    <string name="account_edit_server_url">服务器URL</string>
+    <string name="account_edit_server_port">端口（默认：8069）</string>
+    <string name="account_continue_button">下一步</string>
+    <string name="account_login_button">登录</string>
+
+    <!-- Login Fragment Strings -->
+    <string name="login_title">设置登录信息</string>
+    <string name="login_description">选择数据库并输入用户名和密码.</string>
+    <string name="login_select_database">选择数据库</string>
+    <string name="login_edit_username">用户名</string>
+    <string name="login_edit_password">密码</string>
+    <string name="action_settings">设置</string>
+
+    <!-- SyncWizard fragment strings -->
+    <string name="syncwizard_title">开启/关闭  同步</string>
+    <string name="syncwizard_description">设置同步.</string>
+    <string name="account_sync_wizard_button">下一步</string>
+    <!-- Message Fragment all read messages -->
+    <string name="message_inbox_all_read"><b>非常好!</b> 收件箱为空.\n \n
+
+收件箱会显示出发给你的站内消息或者邮件.</string>
+    <string name="message_tome_all_read"><b>没有站内消息.</b>\n\n发给你的站内消息.</string>
+    <string name="message_todo_all_read"><b>没有待办事项.</b>\n\n
+
+你可以将你的站内信息标为待办事项进行管理.</string>
+    <string name="message_no_group_message">该组没有消息.</string>
+
+    <!-- Compose Note Fragment Strings -->
+    <string name="compose_note_tags">标签 :</string>
+    <string name="compose_note_stages">阶段 :</string>
+    <string name="compose_note_description">描述</string>
+    <string name="imgview_note_add_tags">点击打开对话框选择标签</string>
+
+    <!-- Detail Note Fragment Strings -->
+    <string name="detail_note_name">名称</string>
+    <string name="detail_note_memo">备忘录</string>
+
+    <!-- Setting pref strings -->
+    <string-array name="syncInterval">
+        <item name="5">每5分钟</item>
+        <item name="10">每10分钟</item>
+        <item name="20">每20分钟</item>
+        <item name="40">每40分钟</item>
+        <item name="60">每小时</item>
+        <item name="1440">每天一次</item>
+    </string-array>
+    <string-array name="syncIntervalValues">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="40">40</item>
+        <item name="60">60</item>
+        <item name="1440">1440</item>
+    </string-array>
+    <string-array name="syncDataLimit">
+        <item name="30">1 月以前</item>
+        <item name="60">2 月以前</item>
+        <item name="90">3 月以前</item>
+    </string-array>
+    <string-array name="syncDataLimitValues">
+        <item name="30">30</item>
+        <item name="60">60</item>
+        <item name="90">90</item>
+    </string-array>
+
+    <!-- Aboout Company Fragment Strings -->
+    <string name="about_Company_line1">Copyright © 2004-TODAY OpenERP SA. All Rights Reserved.</string>
+    <string name="about_Company_line2">OpenERP is a trademark of the <a href="https://www.openerp.com/">OpenERP.com.</a></string>
+    <string name="about_Company_line3">Licenced under the terms of <a href="http://www.gnu.org/licenses/agpl.html/">GNU Affero General Public License</a></string>
+    <string name="about_Company_line4">For more information visit <a href="https://www.openerp.com/">OpenERP.com</a>.</string>
+    <string name="app_version_name">Version</string>
+    <string name="imgcontentDescription">OpenERP LOGO in upper portion of the screen</string>
+
+    <!-- OpenERP Widget Strings -->
+    <string name="widget_company_logo">OpenERP logo</string>
+    <string name="widget_notes_label">笔记</string>
+    <string name="widget_notes_notification">00</string>
+    <string name="widget_messages_label">消息</string>
+    <string name="widget_messages_notification">00</string>
+    <string name="widget_compose_notes">写笔记</string>
+    <string name="widget_compose_messages">发消息</string>
+
+</resources>
