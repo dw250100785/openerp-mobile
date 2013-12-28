@@ -61,12 +61,12 @@ public class NoteDBHelper extends BaseDBHelper {
 	// This method Will generate Name for the Notes
 	public String generateName(String longName) {
 
-		String[] splitName = (longName).split("\\n");
+		String[] splitName = (longName).split("\\n");//换行
 
 		if (splitName.length == 1) {
 			name = longName;
 		} else {
-			name = splitName[0];
+			name = splitName[0];//取第一行
 		}
 		return name;
 	}

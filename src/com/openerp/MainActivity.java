@@ -87,6 +87,7 @@ public class MainActivity extends FragmentActivity implements
 
 	public FragmentHandler fragmentHandler;
 
+	//预定义菜单项
 	public enum SETTING_KEYS {
 		GLOBAL_SETTING, PROFILE, LOGOUT, ACCOUNTS, ADD_ACCOUNT, ABOUT_US
 	}
@@ -209,7 +210,7 @@ public class MainActivity extends FragmentActivity implements
 			i++;
 		}
 		// Set the dialog title
-		builder.setTitle("Select Account")
+		builder.setTitle("选择帐号")
 				// Specify the list array, the items to be selected by default
 				// (null for none),
 				// and the listener through which to receive callbacks when
@@ -254,7 +255,7 @@ public class MainActivity extends FragmentActivity implements
 
 		return builder.create();
 	}
-
+//退出确认窗口
 	private Dialog logoutConfirmDialog() {
 
 		// Initialize the Alert Dialog
@@ -262,11 +263,11 @@ public class MainActivity extends FragmentActivity implements
 		// Source of the data in the DIalog
 
 		// Set the dialog title
-		builder.setTitle("Confirm")
-				.setMessage("Are you sure want to logout?")
+		builder.setTitle("你确定？")
+				.setMessage("你确定要退出登录?")
 
 				// Set the action buttons
-				.setPositiveButton("Yes",
+				.setPositiveButton("确定",
 						new DialogInterface.OnClickListener() {
 							@Override
 							public void onClick(DialogInterface dialog, int id) {
@@ -279,7 +280,7 @@ public class MainActivity extends FragmentActivity implements
 								finish();
 							}
 						})
-				.setNegativeButton("Cancel",
+				.setNegativeButton("取消",
 						new DialogInterface.OnClickListener() {
 							@Override
 							public void onClick(DialogInterface dialog, int id) {
@@ -313,7 +314,7 @@ public class MainActivity extends FragmentActivity implements
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+//设置项选中
 	public boolean onSettingItemSelected(SETTING_KEYS key) {
 		switch (key) {
 		case GLOBAL_SETTING:
@@ -495,6 +496,8 @@ public class MainActivity extends FragmentActivity implements
 
 	/**
 	 * Handle sync provider. Depend on user settings
+	 * 
+	 * 根据用户操作，实时同步
 	 */
 	public void handleSyncProvider() {
 
@@ -521,7 +524,7 @@ public class MainActivity extends FragmentActivity implements
 				setAutoSync(authority, false);
 			}
 		}
-		Toast.makeText(this, "Setting saved.", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "设置已保存.", Toast.LENGTH_LONG).show();
 	}
 
 	@Override
@@ -602,6 +605,7 @@ public class MainActivity extends FragmentActivity implements
 			mDrawerSubtitle = OEUser.current(context).getHost();
 			getActionBar().setHomeButtonEnabled(true);
 			getActionBar().setDisplayHomeAsUpEnabled(true);
+			//设置左侧菜单栏
 			setDrawerItems(drawerItems);
 			if (mDrawerItemSelectedPosition > 0) {
 				mAppTitle = mDrawerListItems.get(mDrawerItemSelectedPosition)
@@ -610,7 +614,7 @@ public class MainActivity extends FragmentActivity implements
 			}
 		}
 	}
-
+//生成左侧菜单栏
 	private void setDrawerItems(List<DrawerItem> drawerItems) {
 		mDrawerListItems.addAll(drawerItems);
 		mDrawerListItems.addAll(setSettingMenu());
@@ -707,32 +711,33 @@ public class MainActivity extends FragmentActivity implements
 			getActionBar().setIcon(profPic);
 		}
 	}
-
+// 左侧 设置项
+	
 	private List<DrawerItem> setSettingMenu() {
 		List<DrawerItem> sys = new ArrayList<DrawerItem>();
 		String key = "com.openerp.settings";
-		sys.add(new DrawerItem(key, "Settings", true));
-		sys.add(new DrawerItem(key, "Profile", 0, R.drawable.ic_action_user,
+		sys.add(new DrawerItem(key, "设置", true));
+		sys.add(new DrawerItem(key, "个人简介", 0, R.drawable.ic_action_user,
 				getFragBundle(new Fragment(), "settings", SETTING_KEYS.PROFILE)));
 
-		sys.add(new DrawerItem(key, "Settings", 0,
+		sys.add(new DrawerItem(key, "设置", 0,
 				R.drawable.ic_action_settings, getFragBundle(new Fragment(),
 						"settings", SETTING_KEYS.GLOBAL_SETTING)));
 
-		sys.add(new DrawerItem(key, "Accounts", 0,
+		sys.add(new DrawerItem(key, "帐号", 0,
 				R.drawable.ic_action_accounts, getFragBundle(new Fragment(),
 						"settings", SETTING_KEYS.ACCOUNTS)));
 
-		sys.add(new DrawerItem(key, "Add Account", 0,
+		sys.add(new DrawerItem(key, "添加帐号", 0,
 				R.drawable.ic_action_add_account, getFragBundle(new Fragment(),
 						"settings", SETTING_KEYS.ADD_ACCOUNT)));
 		sys.add(new DrawerItem(
 				key,
-				"About Us",
+				"关于",
 				0,
 				R.drawable.ic_action_about,
 				getFragBundle(new Fragment(), "settings", SETTING_KEYS.ABOUT_US)));
-		sys.add(new DrawerItem(key, "Logout", 0, R.drawable.ic_action_logout,
+		sys.add(new DrawerItem(key, "退出", 0, R.drawable.ic_action_logout,
 				getFragBundle(new Fragment(), "settings", SETTING_KEYS.LOGOUT)));
 
 		return sys;

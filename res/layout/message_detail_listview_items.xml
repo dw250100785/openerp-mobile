@@ -119,7 +119,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:singleLine="true"
-                        android:text="To: "
+                        android:text="@string/to"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="#414141" />
 
@@ -128,7 +128,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:singleLine="true"
-                        android:text="Admin"
+                        android:text="@string/admin"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="#414141" />
                 </LinearLayout>
@@ -203,7 +203,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:text="ATTACHMENTS"
+                android:text="@string/attachments"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textStyle="bold" />
 

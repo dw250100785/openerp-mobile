@@ -4,19 +4,19 @@
         android:id="@+id/menu_message_compose"
         android:icon="@drawable/ic_action_mail_add"
         android:showAsAction="always"
-        android:title="Compose Message">
+        android:title="@string/compose_message">
     </item>
     <item
         android:id="@+id/menu_message_detail_read"
         android:icon="@drawable/ic_action_mark_read"
         android:showAsAction="always"
-        android:title="Mark as Read">
+        android:title="@string/mark_as_read">
     </item>
     <item
         android:id="@+id/menu_message_detail_unread"
         android:icon="@drawable/ic_action_mark_unread"
         android:showAsAction="always"
-        android:title="Mark as Unead">
+        android:title="@string/mark_as_unread">
     </item>
 
 </menu>

@@ -106,7 +106,7 @@ public class Login extends BaseFragment {
 		dbListSpinner = (Spinner) rootView.findViewById(R.id.lstDatabases);
 		this.handleArguments((Bundle) getArguments());
 		this.loadDatabaseList();
-		getActivity().setTitle("Login");
+		getActivity().setTitle("登录");
 		getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
 		getActivity().getActionBar().setHomeButtonEnabled(false);
 		return rootView;

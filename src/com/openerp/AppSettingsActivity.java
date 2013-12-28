@@ -39,7 +39,7 @@ public class AppSettingsActivity extends PreferenceActivity {
 		super.onCreate(savedInstanceState);
 
 		getActionBar().setHomeButtonEnabled(true);
-		getActionBar().setSubtitle("Application Settings");
+		getActionBar().setSubtitle("应用设置");
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		getActionBar().setIcon(R.drawable.ic_action_settings);

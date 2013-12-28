@@ -76,7 +76,7 @@ public class UserGroups extends BaseFragment implements
 	public void onStart() {
 		super.onStart();
 		follower = new MailFollowerDb(scope.context());
-		scope.context().setTitle("Join a Group");
+		scope.context().setTitle("加入一个群组");
 		lstGroups = (GridView) rootView.findViewById(R.id.listGroups);
 		groups_loader = new LoadGroups();
 		groups_loader.execute((Void) null);
@@ -208,12 +208,12 @@ public class UserGroups extends BaseFragment implements
 		db = (BaseDBHelper) databaseHelper(context);
 		List<DrawerItem> drawer_items = new ArrayList<DrawerItem>();
 		if (db.getOEInstance().isInstalled("mail.group")) {
-			drawer_items.add(new DrawerItem(TAG, "My Groups", true));
+			drawer_items.add(new DrawerItem(TAG, "我的群组", true));
 
 			// default join group menu
 			UserGroups grp = new UserGroups();
 			grp.setArguments(new Bundle());
-			drawer_items.add(new DrawerItem(TAG, "Join a Group", 0,
+			drawer_items.add(new DrawerItem(TAG, "加入群组", 0,
 					R.drawable.ic_action_social_group, grp));
 
 			// Add dynamic groups

@@ -23,14 +23,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Load more ..." />
+            android:text="@string/load_more" />
 
         <Button
             android:id="@+id/btn_note_addfollower"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add follower" />
+            android:text="@string/add_follower" />
     </LinearLayout>
 
 </RelativeLayout>

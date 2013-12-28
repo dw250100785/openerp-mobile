@@ -120,9 +120,9 @@ public class MessageComposeActivty extends Activity implements
 
 			new String[] { "id = ?" }, new String[] { message_id + "" }).get(
 					"records")).get(0);
-			getActionBar().setTitle("Reply");
+			getActionBar().setTitle("回复");
 			EditText edtSubject = (EditText) findViewById(R.id.edtMessageSubject);
-			edtSubject.setText("Re: " + parent_row.get("subject").toString());
+			edtSubject.setText("回复: " + parent_row.get("subject").toString());
 			JSONArray partner_ids = new JSONArray();
 			try {
 
@@ -139,7 +139,7 @@ public class MessageComposeActivty extends Activity implements
 			}
 
 		} else {
-			getActionBar().setTitle("Compose");
+			getActionBar().setTitle("发消息");
 			if (getIntent().getData() != null) {
 				Cursor cursor = managedQuery(getIntent().getData(), null, null,
 						null, null);
@@ -310,6 +310,7 @@ public class MessageComposeActivty extends Activity implements
 		case R.id.menu_message_compose_add_attachment_files:
 			requestForAttachmentIntent(ATTACHMENT_TYPE.TEXT_FILE);
 			return true;
+		//发送邮件
 		case R.id.menu_message_compose_send:
 
 			EditText edtSubject = (EditText) findViewById(R.id.edtMessageSubject);
@@ -317,23 +318,24 @@ public class MessageComposeActivty extends Activity implements
 			edtSubject.setError(null);
 			edtBody.setError(null);
 			if (selectedPartners.size() == 0) {
-				Toast.makeText(this, "Select atleast one receiptent",
+				Toast.makeText(this, "请输入正确的收件人",
 						Toast.LENGTH_LONG).show();
 			} else if (TextUtils.isEmpty(edtSubject.getText())) {
-				edtSubject.setError("Provide Message Subject !");
+				edtSubject.setError("主题不能为空 !");
 			} else if (TextUtils.isEmpty(edtBody.getText())) {
-				edtBody.setError("Provide Message Body !");
+				edtBody.setError("正文内容不能为空!");
 			} else {
 
-				Toast.makeText(this, "Sending message...", Toast.LENGTH_LONG)
+				Toast.makeText(this, "发送中...", Toast.LENGTH_LONG)
 						.show();
 				String subject = edtSubject.getText().toString();
 				String body = edtBody.getText().toString();
-
+				//写入oe附件模块
 				Ir_AttachmentDBHelper attachment = new Ir_AttachmentDBHelper(
 						MainActivity.context);
 				JSONArray newAttachmentIds = new JSONArray();
 				for (Uri file : file_uris) {
+					//写入 oe数据库，注意每个类型字段保存方式
 					File fileData = new File(file.getPath());
 					ContentValues values = new ContentValues();
 					values.put("datas_fname", getFilenameFromUri(file));
@@ -618,12 +620,12 @@ public class MessageComposeActivty extends Activity implements
 		protected void onPostExecute(final Boolean success) {
 			if (success) {
 				Toast.makeText(getApplicationContext(),
-						"Message sent succussfull.", Toast.LENGTH_LONG).show();
+						"站内消息发送成功.", Toast.LENGTH_LONG).show();
 				selectedPartners = new HashMap<String, TagsItems>();
 				finish();
 			} else {
 				Toast.makeText(getApplicationContext(),
-						"Unable to send message.", Toast.LENGTH_LONG).show();
+						"站内消息发送失败.", Toast.LENGTH_LONG).show();
 			}
 		}
 

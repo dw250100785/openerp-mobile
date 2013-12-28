@@ -58,6 +58,8 @@ import com.openerp.support.listview.OEListViewRows;
 import com.openerp.util.drawer.DrawerItem;
 
 public class AddFollowerFragment extends BaseFragment {
+//BaseFragment   基本视图框架
+	
 
 	View rootview;
 	ListView partner_list;

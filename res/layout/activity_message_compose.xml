@@ -24,13 +24,13 @@
                 android:nextFocusDown="@+id/edtMessageSubject"
                 android:textColor="#828182" />
         </LinearLayout>
-
+		<!--发邮件  -->
         <EditText
             android:id="@+id/edtMessageSubject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Subject"
+            android:hint="@string/subject" 
             android:singleLine="true" />
 
         <EditText
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Body"
+            android:hint="@string/body"
             android:inputType="textMultiLine" />
 
         <ListView

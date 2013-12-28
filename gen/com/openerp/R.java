@@ -393,66 +393,248 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class string {
         /**  Aboout Company Fragment Strings 
          */
-        public static final int about_Company_line1=0x7f070021;
-        public static final int about_Company_line2=0x7f070022;
-        public static final int about_Company_line3=0x7f070023;
-        public static final int about_Company_line4=0x7f070024;
+        public static final int about_Company_line1=0x7f07005e;
+        public static final int about_Company_line2=0x7f07005f;
+        public static final int about_Company_line3=0x7f070060;
+        public static final int about_Company_line4=0x7f070061;
         public static final int account_continue_button=0x7f07000c;
         public static final int account_description=0x7f070009;
         public static final int account_edit_server_port=0x7f07000b;
         public static final int account_edit_server_url=0x7f07000a;
         public static final int account_login_button=0x7f07000d;
-        public static final int account_sync_wizard_button=0x7f070016;
+        public static final int account_sync_wizard_button=0x7f070053;
         public static final int account_title=0x7f070008;
-        public static final int action_settings=0x7f070013;
+        public static final int action_settings=0x7f070050;
+        /** 添加新的翻译  
+         */
+        public static final int add=0x7f070017;
+        public static final int add_account=0x7f07000e;
+        /** 添加新的翻译  
+         */
+        public static final int add_attachment=0x7f070018;
+        /** 添加新的翻译  
+         */
+        public static final int add_follower=0x7f07002f;
+        /** 添加新的翻译  
+         */
+        public static final int admin=0x7f070037;
         public static final int app_name=0x7f070003;
-        public static final int app_version_name=0x7f070025;
-        public static final int compose_note_description=0x7f07001d;
-        public static final int compose_note_stages=0x7f07001c;
+        public static final int app_version_name=0x7f070062;
+        /** 添加新的翻译  
+         */
+        public static final int archive=0x7f070012;
+        /** 添加新的翻译  
+         */
+        public static final int attach_file=0x7f07001a;
+        /** 添加新的翻译  
+         */
+        public static final int attach_image=0x7f070019;
+        /** 添加新的翻译  
+         */
+        public static final int attachments=0x7f070035;
+        /** 添加新的翻译  
+         */
+        public static final int body=0x7f070024;
+        /** 添加新的翻译  
+         */
+        public static final int cancel=0x7f07003b;
+        /** 添加新的翻译  
+         */
+        public static final int compose_message=0x7f070015;
+        /** 添加新的翻译  
+         */
+        public static final int compose_note=0x7f070044;
+        public static final int compose_note_description=0x7f07005a;
+        public static final int compose_note_stages=0x7f070059;
         /**  Compose Note Fragment Strings 
          */
-        public static final int compose_note_tags=0x7f07001b;
-        public static final int detail_note_memo=0x7f070020;
+        public static final int compose_note_tags=0x7f070058;
+        /** 添加新的翻译  
+         */
+        public static final int contact_sync=0x7f070048;
+        /** 添加新的翻译  
+         */
+        public static final int create=0x7f070043;
+        /** 添加新的翻译  
+         */
+        public static final int database=0x7f07001f;
+        /** 添加新的翻译  
+         */
+        public static final int delete=0x7f070028;
+        /** 添加新的翻译  
+         */
+        public static final int delete_note=0x7f070042;
+        public static final int detail_note_memo=0x7f07005d;
         /**  Detail Note Fragment Strings 
          */
-        public static final int detail_note_name=0x7f07001f;
+        public static final int detail_note_name=0x7f07005c;
         public static final int drawer_close=0x7f070006;
         public static final int drawer_open=0x7f070005;
-        public static final int imgcontentDescription=0x7f070026;
-        public static final int imgview_note_add_tags=0x7f07001e;
-        public static final int login_description=0x7f07000f;
-        public static final int login_edit_password=0x7f070012;
-        public static final int login_edit_username=0x7f070011;
-        public static final int login_select_database=0x7f070010;
-        /**  Login Fragment Strings 
+        /** 添加新的翻译  
          */
-        public static final int login_title=0x7f07000e;
+        public static final int dummy_name=0x7f070025;
+        /** 添加新的翻译  
+         */
+        public static final int edit_note=0x7f070041;
+        /** 添加新的翻译  
+         */
+        public static final int enable_sync=0x7f070045;
+        /** 添加新的翻译  
+         */
+        public static final int forward_as_email=0x7f07003e;
+        /** 添加新的翻译  
+         */
+        public static final int get_from_server=0x7f07001c;
+        /** 添加新的翻译  
+         */
+        public static final int group_name=0x7f070033;
+        /** 添加新的翻译  
+         */
+        public static final int idea_fragment=0x7f070030;
+        public static final int imgcontentDescription=0x7f070063;
+        public static final int imgview_note_add_tags=0x7f07005b;
+        /** 添加新的翻译  
+         */
+        public static final int invite=0x7f07003d;
+        /** 添加新的翻译  
+         */
+        public static final int join=0x7f070032;
+        /** 添加新的翻译  
+         */
+        public static final int load_more=0x7f07002e;
+        /** 添加新的翻译  
+         */
+        public static final int loading=0x7f070034;
+        /** 添加新的翻译  
+         */
+        public static final int login=0x7f070026;
+        public static final int login_description=0x7f07004c;
+        public static final int login_edit_password=0x7f07004f;
+        public static final int login_edit_username=0x7f07004e;
+        /** 添加新的翻译  
+         */
+        public static final int login_name=0x7f07001e;
+        public static final int login_select_database=0x7f07004d;
+        /** 添加新的翻译  
+ Login Fragment Strings 
+         */
+        public static final int login_title=0x7f07004b;
         /**  Account Fragment Strings 
          */
         public static final int logo_description=0x7f070007;
+        /** 添加新的翻译  
+         */
+        public static final int logout=0x7f070027;
+        /** 添加新的翻译  
+         */
+        public static final int mark_as_done=0x7f07003f;
+        /** 添加新的翻译  
+         */
+        public static final int mark_as_open=0x7f070040;
+        /** 添加新的翻译  
+         */
+        public static final int mark_as_read=0x7f070011;
+        /** 添加新的翻译  
+         */
+        public static final int mark_as_todu=0x7f070013;
+        /** 添加新的翻译  
+         */
+        public static final int mark_as_unread=0x7f070010;
+        /** 添加新的翻译  
+         */
+        public static final int message=0x7f070038;
         /**  Message Fragment all read messages 
          */
-        public static final int message_inbox_all_read=0x7f070017;
-        public static final int message_no_group_message=0x7f07001a;
-        public static final int message_todo_all_read=0x7f070019;
-        public static final int message_tome_all_read=0x7f070018;
+        public static final int message_inbox_all_read=0x7f070054;
+        public static final int message_no_group_message=0x7f070057;
+        public static final int message_todo_all_read=0x7f070056;
+        public static final int message_tome_all_read=0x7f070055;
+        /** 添加新的翻译  
+         */
+        public static final int more=0x7f07003c;
+        /** 添加新的翻译  
+         */
+        public static final int provide_your_port=0x7f07002c;
         public static final int pull_to_refresh_pull_label=0x7f070000;
         public static final int pull_to_refresh_refreshing_label=0x7f070002;
         public static final int pull_to_refresh_release_label=0x7f070001;
-        public static final int syncwizard_description=0x7f070015;
+        /** 添加新的翻译  
+         */
+        public static final int refresh_details=0x7f07000f;
+        /** 添加新的翻译  
+         */
+        public static final int save=0x7f07003a;
+        /** 添加新的翻译  
+         */
+        public static final int search=0x7f070016;
+        /** 添加新的翻译  
+         */
+        public static final int secure_connection=0x7f07002d;
+        /** 添加新的翻译  
+         */
+        public static final int send=0x7f07001b;
+        /** 添加新的翻译  
+         */
+        public static final int server_url=0x7f070029;
+        /** 添加新的翻译  
+         */
+        public static final int subject=0x7f070023;
+        /** 添加新的翻译  
+         */
+        public static final int sync_data_limit=0x7f070047;
+        /** 添加新的翻译  
+         */
+        public static final int sync_interval=0x7f070046;
+        /** 添加新的翻译  
+         */
+        public static final int sync_local_partners=0x7f070049;
+        /** 添加新的翻译  
+         */
+        public static final int sync_server_partners=0x7f07004a;
+        public static final int syncwizard_description=0x7f070052;
         /**  SyncWizard fragment strings 
          */
-        public static final int syncwizard_title=0x7f070014;
+        public static final int syncwizard_title=0x7f070051;
+        /** 添加新的翻译  
+         */
+        public static final int timezone=0x7f070020;
+        /** 添加新的翻译  
+         */
+        public static final int title=0x7f07002b;
         public static final int title_activity_main=0x7f070004;
+        /** 添加新的翻译  
+         */
+        public static final int to=0x7f070036;
+        /** 添加新的翻译  
+         */
+        public static final int unfollow=0x7f070031;
+        /** 添加新的翻译  
+         */
+        public static final int unmark_from_todu=0x7f070014;
+        /** 添加新的翻译  
+         */
+        public static final int user_email=0x7f070039;
+        /** 添加新的翻译  
+         */
+        public static final int user_login=0x7f07002a;
+        /** 添加新的翻译  
+         */
+        public static final int user_name=0x7f07001d;
+        /** 添加新的翻译  
+         */
+        public static final int waiting_for_sync_to_start=0x7f070021;
         /**  OpenERP Widget Strings 
          */
-        public static final int widget_company_logo=0x7f070027;
-        public static final int widget_compose_messages=0x7f07002d;
-        public static final int widget_compose_notes=0x7f07002c;
-        public static final int widget_messages_label=0x7f07002a;
-        public static final int widget_messages_notification=0x7f07002b;
-        public static final int widget_notes_label=0x7f070028;
-        public static final int widget_notes_notification=0x7f070029;
+        public static final int widget_company_logo=0x7f070064;
+        public static final int widget_compose_messages=0x7f07006a;
+        public static final int widget_compose_notes=0x7f070069;
+        public static final int widget_messages_label=0x7f070067;
+        public static final int widget_messages_notification=0x7f070068;
+        public static final int widget_notes_label=0x7f070065;
+        public static final int widget_notes_notification=0x7f070066;
+        /** 添加新的翻译  
+         */
+        public static final int your_messages_will_appear_shortly=0x7f070022;
     }
     public static final class style {
         /** 

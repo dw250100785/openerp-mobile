@@ -258,12 +258,35 @@ public abstract class MultiTagsTextView extends MultiAutoCompleteTextView
 		// on API 16 and up
 		if (Build.VERSION.SDK_INT >= 16 && initialized && !inInvalidate) {
 			inInvalidate = true;
+//			？？？
 			setShadowLayer(getShadowRadius(), getShadowDx(), getShadowDy(),
 					getShadowColor());
 			inInvalidate = false;
 		}
 		super.invalidate();
 	}
+
+	private float getShadowRadius() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private int getShadowColor() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private float getShadowDy() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private float getShadowDx() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
 
 	@Override
 	public boolean enoughToFilter() {

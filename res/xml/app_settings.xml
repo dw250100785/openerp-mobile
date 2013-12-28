@@ -8,7 +8,7 @@
             android:defaultValue="false"
             android:key="perform_sync"
             android:summary="Enable or disable data synchronization"
-            android:title="Enable Sync" />
+            android:title="@string/enable_sync" />
 
         <ListPreference
             android:defaultValue="1440"
@@ -17,32 +17,32 @@
             android:entryValues="@array/syncIntervalValues"
             android:key="sync_interval"
             android:summary="Define how often synchronization will be performed"
-            android:title="Sync interval" />
+            android:title="@string/sync_interval" />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="sync_data_limit_settings"
-        android:title="Data Sync Limit" >
+        android:title="@string/sync_data_limit" >
         <ListPreference
             android:defaultValue="60"
             android:entries="@array/syncDataLimit"
             android:entryValues="@array/syncDataLimitValues"
             android:key="sync_data_limit"
             android:summary="Define how old data to be synchronized"
-            android:title="Sync data limit" />
+            android:title="@string/sync_data_limit" />
     </PreferenceCategory>
     <PreferenceCategory
         android:key="contact_sync_setting"
-        android:title="Contact Sync" >
+        android:title="@string/contact_sync" >
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="local_contact_sync"
             android:summary="Enable or disable local partner synchronization"
-            android:title="Sync local partners" />
+            android:title="@string/sync_local_partners" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="server_contact_sync"
             android:summary="Enable or disable server partner synchronization"
-            android:title="Sync server partners" />
+            android:title="@string/sync_server_partners" />
     </PreferenceCategory>
 
 </PreferenceScreen>

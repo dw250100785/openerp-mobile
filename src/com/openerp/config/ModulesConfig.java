@@ -24,7 +24,8 @@ import com.openerp.addons.messages.UserGroups;
 import com.openerp.addons.note.Note;
 import com.openerp.support.Module;
 import com.openerp.support.ModulesConfigHelper;
-
+// add dengwei   idea 根本没做完
+//import com.openerp.addons.idea.Idea;
 /**
  * The Class ModulesConfig.
  */
@@ -35,7 +36,9 @@ public class ModulesConfig extends ModulesConfigHelper {
 	 */
 	public ModulesConfig() {
 		/* application modules */
-		// add(new Module("module_idea", "Idea", new Idea(), 0));
+		// add dengwei
+		//add(new Module("module_idea", "Idea", new Idea(), 0));
+		//add end
 		add(new Module("menu_message", "Message", new Message()), true);
 		add(new Module("menu_user_groups", "My Groups", new UserGroups()));
 		add(new Module("addons_note", "Notes", new Note()));

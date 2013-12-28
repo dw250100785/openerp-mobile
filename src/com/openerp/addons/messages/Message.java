@@ -708,17 +708,17 @@ public class Message extends BaseFragment implements
 		List<DrawerItem> drawerItems = new ArrayList<DrawerItem>();
 		db = (MessageDBHelper) databaseHelper(context);
 		if (db.getOEInstance().isInstalled("mail.message")) {
-			drawerItems.add(new DrawerItem(TAG, "Messages", true));
-			drawerItems.add(new DrawerItem(TAG, "Inbox", getCount(TYPE.INBOX,
+			drawerItems.add(new DrawerItem(TAG, "消息", true));
+			drawerItems.add(new DrawerItem(TAG, "收件箱", getCount(TYPE.INBOX,
 					context), R.drawable.ic_action_inbox, getObjectOFClass(
 					"type", "inbox")));
-			drawerItems.add(new DrawerItem(TAG, "To: me", getCount(TYPE.TOME,
+			drawerItems.add(new DrawerItem(TAG, "发给我的", getCount(TYPE.TOME,
 					context), R.drawable.ic_action_user, getObjectOFClass(
 					"type", "to-me")));
-			drawerItems.add(new DrawerItem(TAG, "To-do", getCount(TYPE.TODO,
+			drawerItems.add(new DrawerItem(TAG, "待办事项", getCount(TYPE.TODO,
 					context), R.drawable.ic_action_todo, getObjectOFClass(
 					"type", "to-do")));
-			drawerItems.add(new DrawerItem(TAG, "Archives", 0,
+			drawerItems.add(new DrawerItem(TAG, "归档", 0,
 					R.drawable.ic_action_archive, getObjectOFClass("type",
 							"archive")));
 			return drawerItems;
@@ -770,20 +770,20 @@ public class Message extends BaseFragment implements
 		if (bundle != null) {
 			if (bundle.containsKey("type")) {
 				type = bundle.getString("type");
-				String title = "Archive";
+				String title = "归档";
 				if (type.equals("inbox")) {
 					// setupListView(TYPE.INBOX);
 					loadMessage = new LoadMessages(TYPE.INBOX);
 					loadMessage.execute((Void) null);
-					title = "Inbox";
+					title = "收件箱";
 				} else if (type.equals("to-me")) {
-					title = "To-Me";
+					title = "发给我的";
 					// setupListView(TYPE.TOME);
 					loadMessage = new LoadMessages(TYPE.TOME);
 					loadMessage.execute((Void) null);
 				} else if (type.equals("to-do")) {
 					// setupListView(TYPE.TODO);
-					title = "To-DO";
+					title = "待办事项";
 					loadMessage = new LoadMessages(TYPE.TODO);
 					loadMessage.execute((Void) null);
 				} else if (type.equals("archive")) {
@@ -799,7 +799,7 @@ public class Message extends BaseFragment implements
 					loadMessage = new LoadMessages(TYPE.GROUP);
 					loadMessage.execute((Void) null);
 				} else {
-					scope.context().setTitle("Inbox");
+					scope.context().setTitle("收件箱");
 					loadMessage = new LoadMessages(TYPE.INBOX);
 					loadMessage.execute((Void) null);
 				}

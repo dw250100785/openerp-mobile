@@ -111,10 +111,11 @@ public class EditNoteFragment extends BaseFragment implements
 			public boolean onBackPressed() {
 				if (isContentChanged(noteMemo.getText().toString())) {
 					if (flag != true) {
+						//弹出窗口
 						openDailogview(
-								"Are you sure..?",
-								"Your changes will be discarded. Are you sure?",
-								"Discard", "Cancel");
+								"你确定..?",
+								"你的修改尚未保存，你确定离开?",
+								"放弃修改", "取消");
 						return false;
 					}
 				}
@@ -138,7 +139,7 @@ public class EditNoteFragment extends BaseFragment implements
 			stringArray = new String[keyList.size() - 1];
 			stringArray = keyList.toArray(stringArray);
 
-			builder.setTitle("Select Tags");
+			builder.setTitle("选择标签");
 			builder.setMultiChoiceItems(stringArray, null,
 					new DialogInterface.OnMultiChoiceClickListener() {
 						public void onClick(DialogInterface dialog, int item,
@@ -146,7 +147,7 @@ public class EditNoteFragment extends BaseFragment implements
 						}
 					});
 
-			builder.setPositiveButton("Select",
+			builder.setPositiveButton("选择",
 					new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
@@ -171,16 +172,16 @@ public class EditNoteFragment extends BaseFragment implements
 						}
 					});
 		} else {
-			builder.setTitle("You don't have any tags \ncreate tag");
+			builder.setTitle("你还没有创建标签 \n创建");
 		}
 
-		builder.setNegativeButton("Cancel",
+		builder.setNegativeButton("取消",
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface di, int i) {
 					}
 				});
 
-		builder.setNeutralButton("Create",
+		builder.setNeutralButton("创建",
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {

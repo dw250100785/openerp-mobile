@@ -3,40 +3,40 @@
     <item
         android:id="@+id/menu_note_edit_save"
         android:showAsAction="always"
-        android:title="Save">
+        android:title="@string/save">
     </item>
     <item
         android:id="@+id/menu_note_edit_cancel"
         android:showAsAction="always"
-        android:title="Cancel">
+        android:title="@string/cancel">
     </item>
     <item
         android:id="@+id/menu_note_operation"
         android:icon="@drawable/ic_action_overflow"
         android:showAsAction="always"
-        android:title="More">
+        android:title="@string/more">
         <menu>
             <item
                 android:id="@+id/menu_note_invite_people"
-                android:title="Invite People">
+                android:title="@string/invite">
             </item>
             <item
                 android:id="@+id/menu_note_forward_asmail"
-                android:title="Forward as Email">
+                android:title="@string/forward_as_email">
             </item>
             <item
                 android:id="@+id/menu_note_mark_asdone"
-                android:title="Mark As Done"/>
+                android:title="@string/mark_as_done"/>
             <item
                 android:id="@+id/menu_note_mark_asopen"
-                android:title="Mark As Open"/>
+                android:title="@string/mark_as_open"/>
             <item
                 android:id="@+id/menu_note_edit"
-                android:title="Edit Note">
+                android:title="@string/edit_note">
             </item>
             <item
                 android:id="@+id/menu_note_delete"
-                android:title="Delete Note">
+                android:title="@string/delete_note">
             </item>
         </menu>
     </item>

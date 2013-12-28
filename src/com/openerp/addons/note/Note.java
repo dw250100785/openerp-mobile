@@ -191,18 +191,20 @@ public class Note extends BaseFragment implements
 	}
 
 	@Override
+	//菜单
 	public List<DrawerItem> drawerMenus(Context context) {
 		List<DrawerItem> drawerItems = new ArrayList<DrawerItem>();
 		db = (NoteDBHelper) databaseHelper(context);
+		//判断oe服务器上是否安装了便签模块
 		if (db.getOEInstance().isInstalled("note.note")) {
-			drawerItems.add(new DrawerItem(TAG, "Notes", true));
+			drawerItems.add(new DrawerItem(TAG, "便签", true));
 			setNoteStages(context);
 			// Setting list of stages under Note in Drawable menu
-			drawerItems.add(new DrawerItem(TAG, "Notes",
+			drawerItems.add(new DrawerItem(TAG, "便签",
 					getCount("-1", context), R.drawable.ic_action_notes,
 					getFragBundle("stage", "-1")));
 			drawerItems
-					.add(new DrawerItem(TAG, "Archive", 0,
+					.add(new DrawerItem(TAG, "归档", 0,
 							R.drawable.ic_action_archive, getFragBundle(
 									"stage", "-2")));
 			if (stages != null) {

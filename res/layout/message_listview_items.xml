@@ -116,7 +116,7 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="3dp"
-                android:text="message"
+                android:text="@string/message"
                 android:textColor="#ffffff"
                 android:textSize="11sp" />
         </LinearLayout>

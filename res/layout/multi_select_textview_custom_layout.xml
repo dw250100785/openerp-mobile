@@ -33,14 +33,14 @@
             android:id="@+id/txvMultiName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User Name"
+            android:text="@string/user_name"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
             android:id="@+id/txvMultiEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User Email"
+            android:text="@string/user_email"
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
 

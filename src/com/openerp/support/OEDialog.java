@@ -51,7 +51,7 @@ public class OEDialog extends ProgressDialog {
 	 */
 	public OEDialog(Context context, boolean isCancelable, String message) {
 		super(context);
-		this.setTitle("Please wait...");
+		this.setTitle("正在加载中...");
 		this.setCancelable(isCancelable);
 		this.setMessage(message);
 	}

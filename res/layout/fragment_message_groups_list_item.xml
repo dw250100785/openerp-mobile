@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:singleLine="true"
-                android:text="Group Name"
+                android:text="@string/group_name"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#414141" />
 
@@ -45,7 +45,7 @@
                 android:ellipsize="end"
                 android:gravity="center_horizontal"
                 android:lines="2"
-                android:text="Group Name"
+                android:text="@string/group_name"
                 android:textColor="#414141"
                 android:textSize="11sp" />
         </LinearLayout>
@@ -55,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:background="@drawable/button_bg_user_group_join"
-            android:text="Join"
+            android:text="@string/join"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#ffffff"
             android:textStyle="bold"
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:background="@drawable/button_bg_user_group_unjoin"
-            android:text="Unfollow"
+            android:text="@string/unfollow"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#ffffff"
             android:textStyle="bold" />

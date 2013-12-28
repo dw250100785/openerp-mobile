@@ -4,22 +4,22 @@
         android:id="@+id/menu_message_mark_unread_selected"
         android:icon="@drawable/ic_action_mark_unread"
         android:showAsAction="always"
-        android:title="Mark As Unread">
+        android:title="@string/mark_as_unread">
     </item>
     <item
         android:id="@+id/menu_message_mark_read_selected"
         android:icon="@drawable/ic_action_mark_read"
         android:showAsAction="always"
-        android:title="Mark As Read">
+        android:title="@string/mark_as_read">
     </item>
     <item
         android:id="@+id/menu_message_more_move_to_archive_selected"
-        android:title="Archive"/>
+        android:title="@string/archive"/>
     <item
         android:id="@+id/menu_message_more_add_star_selected"
-        android:title="Mark as TODO"/>
+        android:title="@string/mark_as_todu"/>
     <item
         android:id="@+id/menu_message_more_remove_star_selected"
-        android:title="Unmark from TODO"/>
+        android:title="@string/unmark_from_todu"/>
 
 </menu>

@@ -25,14 +25,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:text="Dummy Name"
+            android:text="@string/dummy_name"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
             android:id="@+id/txvAccountHost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dummy Name"
+            android:text="@string/dummy_name"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <LinearLayout
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#cc0000"
-                android:text="Delete"
+                android:text="@string/delete"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#ffffff" />
 
@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#0099cc"
-                android:text="Logout"
+                android:text="@string/logout"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#ffffff" />
 
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#669900"
-                android:text="Login"
+                android:text="@string/login"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#ffffff" />
         </LinearLayout>

@@ -108,7 +108,7 @@ public class ComposeNoteActivity extends Activity implements
 			stringArray = new String[keyList.size() - 1];
 			stringArray = keyList.toArray(stringArray);
 
-			builder.setTitle("Select Tags");
+			builder.setTitle("选择分类");
 			builder.setMultiChoiceItems(stringArray, null,
 					new DialogInterface.OnMultiChoiceClickListener() {
 						public void onClick(DialogInterface dialog, int item,
@@ -140,7 +140,7 @@ public class ComposeNoteActivity extends Activity implements
 						}
 					});
 		} else {
-			builder.setTitle("You don't have any tags \ncreate tag");
+			builder.setTitle("你没有创建标签 \n创建一个");
 		}
 
 		builder.setNegativeButton("Cancel",
@@ -243,10 +243,10 @@ public class ComposeNoteActivity extends Activity implements
 
 		AlertDialog.Builder builder = new Builder(this);
 		final EditText stage = new EditText(this);
-		builder.setTitle("Stage Name").setMessage("Enter new Stage")
+		builder.setTitle("阶段").setMessage("输入新的阶段")
 				.setView(stage);
 
-		builder.setPositiveButton("Create", new OnClickListener() {
+		builder.setPositiveButton("创建", new OnClickListener() {
 			public void onClick(DialogInterface di, int i) {
 				// do something with onClick
 				if ((stage.getText().toString()).equalsIgnoreCase("Add New")
@@ -264,7 +264,7 @@ public class ComposeNoteActivity extends Activity implements
 			}
 		});
 
-		builder.setNegativeButton("Cancel", new OnClickListener() {
+		builder.setNegativeButton("取消", new OnClickListener() {
 			public void onClick(DialogInterface di, int i) {
 			}
 		});
@@ -276,7 +276,7 @@ public class ComposeNoteActivity extends Activity implements
 
 		AlertDialog.Builder builder = new Builder(this);
 		final EditText tag = new EditText(this);
-		builder.setTitle("Tag Name").setMessage("Enter new Tag").setView(tag);
+		builder.setTitle("标签").setMessage("输入新的标签名").setView(tag);
 		builder.setPositiveButton("Create", new OnClickListener() {
 			public void onClick(DialogInterface di, int i) {
 				// do something with onClick
@@ -286,13 +286,13 @@ public class ComposeNoteActivity extends Activity implements
 					noteTags.addObject(new TagsItems(Integer.parseInt(newTag
 							.get("newID")), newTag.get("tagName"), ""));
 				} else {
-					Toast.makeText(scope.context(), "Enter Tag First",
+					Toast.makeText(scope.context(), "请先输入标签名",
 							Toast.LENGTH_LONG).show();
 				}
 			}
 		});
 
-		builder.setNegativeButton("Cancel", new OnClickListener() {
+		builder.setNegativeButton("取消", new OnClickListener() {
 			public void onClick(DialogInterface di, int i) {
 			}
 		});
@@ -313,7 +313,7 @@ public class ComposeNoteActivity extends Activity implements
 		values.put("id", newId);
 		notestageObj.create(notestageObj, values);
 	}
-
+    //解决中文乱码 bug
 	private void writeNote() {
 
 		JSONArray tagID = dbhelper.getSelectedTagId(selectedTags);
@@ -377,7 +377,7 @@ public class ComposeNoteActivity extends Activity implements
 				finish();
 			} else {
 				Toast.makeText(scope.context(),
-						"You can't keep Stage empty..!", Toast.LENGTH_SHORT)
+						"阶段不能为空!", Toast.LENGTH_SHORT)
 						.show();
 			}
 		} catch (Exception e) {

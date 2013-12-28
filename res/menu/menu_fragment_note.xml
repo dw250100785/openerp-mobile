@@ -4,24 +4,24 @@
         android:id="@+id/menu_note_compose"
         android:icon="@drawable/ic_action_new_note"
         android:showAsAction="always"
-        android:title="Compose Note">
+        android:title="@string/compose_note">
     </item>
     <item
         android:id="@+id/menu_note_search"
         android:actionViewClass="android.widget.SearchView"
         android:icon="@drawable/ic_action_search"
         android:showAsAction="always"
-        android:title="Search">
+        android:title="@string/search">
     </item>
     <item
         android:id="@+id/menu_note_write"
         android:showAsAction="always"
-        android:title="Create">
+        android:title="@string/create">
     </item>
     <item
         android:id="@+id/menu_note_cancel"
         android:showAsAction="always"
-        android:title="Cancel">
+        android:title="@string/cancel">
     </item>
 
 </menu>

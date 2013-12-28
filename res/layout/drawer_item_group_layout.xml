@@ -13,7 +13,7 @@
         android:paddingBottom="2dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
-        android:text="Title"
+        android:text="@string/title"
         android:textAllCaps="true"
         android:textColor="#4B4B4D"
         android:textStyle="bold" />

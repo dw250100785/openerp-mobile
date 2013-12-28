@@ -25,7 +25,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="8dp"
             android:paddingTop="4dp"
-            android:text="Subject"
+            android:text="@string/subject"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <ImageView

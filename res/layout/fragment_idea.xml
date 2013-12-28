@@ -7,7 +7,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Idea Fragment"
+        android:text="@string/idea_fragment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>
